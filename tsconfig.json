@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@ddcore/sdk": ["./.ddcore/sdk/index.ts"],
+      "@ddcore/sdk/test": ["./.ddcore/sdk/test.ts"],
+      "@ddcore/desk-sdk": ["./.ddcore/desk-sdk/index.ts"]
+    },
+    "types": []
+  },
+  "include": ["**/*.ts", ".ddcore/types.d.ts"],
+  "exclude": ["node_modules"]
+}

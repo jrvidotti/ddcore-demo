@@ -1,0 +1,24 @@
+name: demo-ddcore
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: ddcore-demo-pg
+    restart: unless-stopped
+    ports:
+      - "5457:5432"
+    environment:
+      POSTGRES_USER: ddcore
+      POSTGRES_PASSWORD: ddcore
+      POSTGRES_DB: ddcore
+    volumes:
+      - demo_postgres_data:/var/lib/postgresql/data
+      - ./docker/initdb:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ddcore -d ddcore"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  demo_postgres_data:

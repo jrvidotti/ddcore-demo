@@ -1,0 +1,12 @@
+{
+  "dsn": "postgres://ddcore:ddcore@localhost:5457/demo_dev?sslmode=disable",
+  "apps": ["."],
+  "port": 8092,
+  "workers": 2,
+  "scheduler": false,
+  "site": "demo",
+  "lang": "en",
+  "currency": "USD",
+  "timezone": "UTC",
+  "dev": true
+}
