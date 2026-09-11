@@ -2,7 +2,7 @@ import { defineApp } from "@ddcore/sdk";
 
 export default defineApp({
   name: "demo",
-  title: "Demo: Projects",
+  title: "Projects",
   version: "0.1.0",
   roles: ["Project Manager", "Project Contributor"],
   scheduler: {
