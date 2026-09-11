@@ -4,7 +4,6 @@
   "port": 8092,
   "workers": 2,
   "scheduler": false,
-  "site": "Projects",
   "lang": "en",
   "currency": "USD",
   "timezone": "UTC",
