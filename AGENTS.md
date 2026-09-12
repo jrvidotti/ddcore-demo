@@ -18,3 +18,6 @@ framework. Read [`DEVELOPMENT.md`](DEVELOPMENT.md) for how work is done here, an
 - Validate every change with `make test` (typecheck plus the app's tests).
 - This repository does **not** depend on a checkout of the framework: the binary comes from
   `.ddcore-version`. Use `DDCORE=../ddcore/bin/ddcore make test` to try an unreleased build.
+- When ddcore cannot do something the app needs, do not work around it silently: write the
+  workaround, then draft a feature request for `github.com/jrvidotti/ddcore` and ask before
+  opening it. See `DEVELOPMENT.md` §1.
