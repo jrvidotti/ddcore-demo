@@ -6,3 +6,8 @@ node_modules
 .DS_Store
 docker/
 demo_postgres_data/
+# generated per app: .ddcore/ carries the development binary (darwin), which
+# has no use inside the image. Careful: **/.ddcore matches the directory, not
+# the .ddcore-version file the build copies first.
+**/node_modules
+**/.ddcore
