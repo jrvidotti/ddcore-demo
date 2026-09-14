@@ -1,5 +1,5 @@
 {
   "mcpServers": {
-    "ddcore": { "command": "ddcore", "args": ["mcp"] }
+    "ddcore": { "command": "../ddcore/bin/ddcore", "args": ["mcp"] }
   }
 }
